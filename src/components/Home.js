@@ -1,5 +1,6 @@
 // import Navbar from "./Navbar";
 import CLient from "./Client";
+import Dashboard from "./Dashboard";
 import ClientLocation from "./ClientLocation";
 import ImageRequest from "./ImageRequest";
 import VideoRequest from "./VideoRequest";
@@ -14,6 +15,7 @@ const Home = () => {
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
         <Route path="/client" element={<CLient />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/clientlocation" element={<ClientLocation />} />
         <Route path="/imagerequest" element={<ImageRequest />} />
         <Route path="/videorequest" element={<VideoRequest />} />
