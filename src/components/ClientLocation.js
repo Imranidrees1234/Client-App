@@ -168,7 +168,7 @@ const ClientLocation = ({ userEmail }) => {
     }, []);
 
     useEffect(() => {
-        const newSocket = io("https://admin-backend-production-4ca3.up.railway.app/client", {
+        const newSocket = io("https://database-backend-production.up.railway.app/client", {
             reconnection: true,
             reconnectionAttempts: 10,
             reconnectionDelay: 3000
