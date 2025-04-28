@@ -151,7 +151,7 @@ const ClientLocation = ({ userEmail }) => {
 
     useEffect(() => {
         // WebSocket for receiving location updates
-        const socketInstance = io("https://livelocation-backend-production.up.railway.app/");
+        const socketInstance = io("https://location-backend-production.up.railway.app/");
         socketInstance.on("client-receive-location", (location) => {
             console.log("Received Driver Location in Client App:", location);
             if (location && typeof location.latitude === "number" && typeof location.longitude === "number") {
